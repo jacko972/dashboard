@@ -58,3 +58,6 @@ before_script:
 
 script: ./node_modules/.bin/gulp check:local-cluster
 after_script: ./node_modules/.bin/gulp coverage-codecov-upload
+
+notifications:
+  slack: ngineered:uzSiPKNOuOjPg0Ph9avmzQNy
