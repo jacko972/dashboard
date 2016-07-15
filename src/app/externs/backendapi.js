@@ -28,7 +28,8 @@ const backendApi = {};
  * @typedef {{
  *    itemsPerPage: number,
  *    page: number,
- *    namespace: string
+ *    namespace: string,
+ *    name: (string|undefined)
  * }}
  */
 backendApi.PaginationQuery;
@@ -284,6 +285,31 @@ backendApi.PetSetList;
  * @typedef {{
  *   objectMeta: !backendApi.ObjectMeta,
  *   typeMeta: !backendApi.TypeMeta,
+ * }}
+ */
+backendApi.ConfigMap;
+
+/**
+ * @typedef {{
+ *   objectMeta: !backendApi.ObjectMeta,
+ *   typeMeta: !backendApi.TypeMeta,
+ *   data: !Object<string, string>,
+ * }}
+ */
+backendApi.ConfigMapDetail;
+
+/**
+ * @typedef {{
+ *   items: !Array<!backendApi.ConfigMap>,
+ *   listMeta: !backendApi.ListMeta
+ * }}
+ */
+backendApi.ConfigMapList;
+
+/**
+ * @typedef {{
+ *   objectMeta: !backendApi.ObjectMeta,
+ *   typeMeta: !backendApi.TypeMeta,
  *   pods: !backendApi.PodInfo,
  *   containerImages: !Array<string>,
  * }}
@@ -367,6 +393,7 @@ backendApi.TypeMeta;
  *   podInfo: !backendApi.PodInfo,
  *   podList: !backendApi.PodList,
  *   serviceList: !backendApi.ServiceList,
+ *   eventList: !backendApi.EventList,
  *   hasMetrics: boolean
  * }}
  */
