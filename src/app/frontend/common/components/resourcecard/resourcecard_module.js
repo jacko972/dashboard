@@ -20,6 +20,7 @@ import {resourceCardListPaginationComponent} from './resourcecardlistpagination_
 import {resourceCardMenuComponent} from './resourcecardmenu_component';
 import {resourceCardDeleteMenuItemComponent} from './resourcecarddeletemenuitem_component';
 import {resourceCardEditMenuItemComponent} from './resourcecardeditmenuitem_component';
+import {resourceCardBlerkoMenuItemComponent} from './resourcecardblerkomenuitem_component';
 import {resourceCardColumnComponent} from './resourcecardcolumn_component';
 import {resourceCardColumnsComponent} from './resourcecardcolumns_component';
 import {resourceCardHeaderColumnComponent} from './resourcecardheadercolumn_component';
@@ -46,6 +47,7 @@ export default angular
     .component('kdResourceCardMenu', resourceCardMenuComponent)
     .component('kdResourceCardDeleteMenuItem', resourceCardDeleteMenuItemComponent)
     .component('kdResourceCardEditMenuItem', resourceCardEditMenuItemComponent)
+    .component('kdResourceCardBlerkoMenuItem', resourceCardBlerkoMenuItemComponent)
     .component('kdResourceCardColumn', resourceCardColumnComponent)
     .component('kdResourceCardColumns', resourceCardColumnsComponent)
     .component('kdResourceCardHeaderColumn', resourceCardHeaderColumnComponent)
